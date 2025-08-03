@@ -13,7 +13,6 @@ see [how-to-generate-template](examples/template/README.md) and [how-to-intercep
 - [ ] Logging Example
 - [ ] Simplify the header files
 - [ ] Executable Example
-- [ ] Push-button Generation
 
 
 ## Cite

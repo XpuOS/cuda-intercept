@@ -31,6 +31,13 @@ cp ${CUDA_HEADER_DIR}/cuda.h .
 python3 ${GEN_SCRIPT_DIR}/cuda_func_map.py -f ${CUDA_HEADER_DIR}/cudaTypedefs.h -I ${GCC_HEADER_PATH} -I ${CUDA_HEADER_DIR} >> intercept.cpp
 ```
 
-TODO: automatically generate cuGetProcAddress related code (replace the existing code in intercept.cpp)
+
+## Step 3: Process cuGetProcAddress related code
+
+```bash
+python3 ${GEN_SCRIPT_DIR}/process_proc_addr.py -f intercept.cpp
+```
+
+
 
 
